@@ -18,37 +18,66 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://kit.fontawesome.com/e387ad5e3a.js"></script>
 <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/board.css">
+<link rel="stylesheet" type="text/css" href="./css/boarddiv.css">
+<link rel="stylesheet" type="text/css" href="./css/boardtable.css">
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-
 	<!-- 상단 메뉴 -->
 	<nav class="navbar">
 		<div class="navbar__logo">
 			<i class="fab fa-monero"></i> <a href="">MBTI TOWN</a>
 		</div>
-
 		<ul class="navbar__menu">
 			<li><a href="main.jsp">#Main</a></li>
-			<li><a href="">#MBTI board</a></li>
+			<li>
+				<a href="">#MBTI board</a>
+				<div class="sub">
+					<ul class="list">
+						<li><a href="#">INTJ</a></li>
+						<li><a href="#">INTP</a></li>
+						<li><a href="#">ENTJ</a></li>
+						<li><a href="#">ENTP</a></li>
+					</ul>
+						
+					<ul class="list">
+						<li><a href="#">INFJ</a></li>
+						<li><a href="#">INFP</a></li>
+						<li><a href="#">ENFJ</a></li>
+						<li><a href="#">ENFP</a></li>
+					</ul>	
+					
+					<ul class="list">
+						<li><a href="#">ISTJ</a></li>
+						<li><a href="#">ISFJ</a></li>
+						<li><a href="#">ESTJ</a></li>
+						<li><a href="#">ESFJ</a></li>
+					</ul>	
+					
+					<ul class="list">
+						<li><a href="#">ISTP</a></li>
+						<li><a href="#">ISFP</a></li>
+						<li><a href="#">ESTP</a></li>
+						<li><a href="#">ESFP</a></li>
+					</ul>
+				</div>
+			</li>
 			<li><a href="">#Psychology</a></li>
 		</ul>
-
 		<ul class="navbar__user">
 			<li><i class="fas fa-user-check"></i></li>
 			<li>~님 환영합니다</li>
 		</ul>
 	</nav>
-
+	
 	<!-- 게시판 이름과 글쓰기 Title -->
-	<div class="Container">
+	<div class="containar-board-nonmain">
 		<!-- 글 제목, 글 내용 입력 table, from, input -->
-		<div class="Center-Board"
+		<div class="center-board-nonmain"
 			style="background-color: #ffffff; padding-top: 5px; padding-bottom: 5px; border-radius: 5px">
-			<table class="view-board">
+			<table class="view-table">
 				<thead>
-					<tr class="view-top">
+					<tr class="table-top">
 						<th style="border-bottom: #000000;">
 							<div style="text-align: left; margin: 0px auto; width: 1040px">
 								<a class="view-title" href="mbtiBoard.jsp?mbti=<%=boardType%>"><font
@@ -71,7 +100,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr class="view-middle" style="border-top: #000000;">
+					<tr class=table-middle style="border-top: #000000;">
 						<td>
 							<div class="form-view-body">
 								여기는 글이 들어갈 공간입니다<br>
@@ -85,7 +114,7 @@
 							</div>
 						</td>
 					</tr>
-					<!-- 댓글을 받아온 뒤 반복문 사용해서 출력해야 함 + 같은 mbti일 경우만 댓글 보이게 해야 함 -->
+					<!-- 댓글을 받아온 뒤 반복문 사용해서 출력해야 함 -->
 					<tr class="view-bottom">
 						<td>
 							<div class="form-view-ripple">
@@ -95,7 +124,7 @@
 							</div>
 						</td>
 					</tr>
-					<tr class="view-bottom">
+					<tr class="table-bottom">
 						<td>
 							<div class="form-view-ripple">
 								여기는 댓글이 들어갈 공간입니다<br> 여기는 댓글이 들어갈 공간입니다<br> <font
@@ -105,7 +134,7 @@
 						</td>
 					</tr>
 					<!-- 댓글 쓰는 form -->
-					<tr class="view-bottom">
+					<tr class="table-bottom">
 						<td>
 							<div class="input-ripple">
 								<form method="post" action="rippleAction.jsp">

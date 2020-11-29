@@ -28,7 +28,8 @@
 <title><%=boardType%> 게시판</title>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://kit.fontawesome.com/e387ad5e3a.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/board.css">
+<link rel="stylesheet" type="text/css" href="./css/boarddiv.css">
+<link rel="stylesheet" type="text/css" href="./css/boardtable.css">
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 <script>
 	$(function() {
@@ -40,19 +41,16 @@
 </script>
 </head>
 <body>
-
 	<!-- 상단 메뉴 -->
 	<nav class="navbar">
 		<div class="navbar__logo">
 			<i class="fab fa-monero"></i> <a href="">MBTI TOWN</a>
 		</div>
-
 		<ul class="navbar__menu">
 			<li><a href="main.jsp">#Main</a></li>
 			<li>
 				<a href="">#MBTI board</a>
 				<div class="sub">
-				
 					<ul class="list">
 						<li><a href="#">INTJ</a></li>
 						<li><a href="#">INTP</a></li>
@@ -84,7 +82,6 @@
 			</li>
 			<li><a href="">#Psychology</a></li>
 		</ul>
-
 		<ul class="navbar__user">
 			<li><i class="fas fa-user-check"></i></li>
 			<li>~님 환영합니다</li>
@@ -92,8 +89,8 @@
 	</nav>
 	
 	<!-- 게시판 이름 및 특성 -->
-	<div class="Container-board-main">
-		<div class="Top-board-main">
+	<div class="container-board-main">
+		<div class="top-board-main">
 			<font style="font-size: 100px; line-height: 100%; font-weight:bold;"><%=boardType%></font><br>
 			<%
 				if (boardType != null) {
@@ -184,10 +181,10 @@
 		</div>
 		
 		<!-- 게시물 목록 -->
-        <div class="Center-board-main">
-            <table class="List-Board">
+        <div class="center-board-main">
+            <table class="main-table">
                 <thead>
-                    <tr class="List-top">
+                    <tr class="table-top">
                         <th style="width: 160px;">말머리</th>
                         <th style="width: 538px;">제목</th>
                         <th style="width: 133px;">작성자</th>
@@ -196,108 +193,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="List-middle">
-                        <td>15</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1"></a></td>
-                        <td class = "list-main">홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>14</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전 천원권</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>13</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>12</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>11</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>10</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>9</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>8</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>7</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>6</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>5</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>4</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
-                        <td>3</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍, 웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
-                        <td>2020.11.14.</td>
-                        <td>25</td>
-                    </tr>
-                    <tr class="List-middle">
+                    <tr class="table-middle">
                         <td>2</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동전</td>
+                        <td class = "table-upper-case"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍</a></td>
+                        <td class = "table-upper-case">웹프그래밍의 홍길동전</td>
                         <td>2020.11.14.</td>
                         <td>25</td>
                     </tr>
-                    <tr class="List-middle">
+                    <tr class="table-middle">
                         <td>1</td>
-                        <td class = "list-main"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍</a></td>
-                        <td class = "list-main">웹프그래밍의 홍길동</td>
+                        <td class = "table-upper-case"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍</a></td>
+                        <td class = "table-upper-case">웹프그래밍의 홍길동</td>
                         <td>2020.11.14.</td>
                         <td>25</td>
                     </tr>
@@ -333,7 +239,7 @@
         </div>	
 		
 		<!-- 게시글 목록 밑  -->
-		<div class="Botton-board-main">
+		<div class="botton-board-main">
 			<div style="float: left;">
 			<%
 				if (pageNumber != 1) {
