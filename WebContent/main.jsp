@@ -75,7 +75,7 @@
 		<img src="Analysttype.png" id=mainImage alt="img">
 		<script type="text/javascript">
         var myImage=document.getElementById("mainImage");
-        var imageArray=["http://gayounghosting.dothome.co.kr/Analysttype1.jpg","http://gayounghosting.dothome.co.kr/image/diplomattype1.jpg",
+        var imageArray=["http://gayounghosting.dothome.co.kr/image/Analysttype1.jpg","http://gayounghosting.dothome.co.kr/image/diplomattype1.jpg",
         	"http://gayounghosting.dothome.co.kr/image/explorertype1.jpg","http://gayounghosting.dothome.co.kr/image/mangertype1.jpg"];
         var imageIndex=0;
 
