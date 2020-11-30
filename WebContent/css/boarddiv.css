@@ -131,8 +131,6 @@ div.containar-board-nonmain {
 	width: 1080px;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 div.top-board-nonmain {
@@ -233,7 +231,7 @@ div.input-ripple {
 }
 
 /* input 태그 속성 - 글 등록 버튼용 */
-.write-btn {
+.write-ripple-btn {
 	background: #AECDFF;
 	background-color: #AECDFF;
 	border-radius: 3px;
@@ -242,6 +240,21 @@ div.input-ripple {
 	cursor: pointer;
 	color: #000000;
 	font-size: 15px;
+	font-family: 'hanna';
+	padding: 5px 16px;
+	text-decoration: none;
+}
+
+.view-button-btn {
+	background: #f1f1f1;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	border: 1px solid #f1f1f1;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-size: 15px;
+	font-family: 'hanna';
 	padding: 5px 16px;
 	text-decoration: none;
 }

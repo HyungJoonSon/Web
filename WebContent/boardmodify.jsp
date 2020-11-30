@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>글쓰기 : <%=boardType%> 게시판</title>
+<title>글수정 : <%=boardType%> 게시판</title>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://kit.fontawesome.com/e387ad5e3a.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/boarddiv.css">
@@ -71,20 +71,23 @@ textarea:focus {outline:none;}
 		</ul>
 	</nav>
 	
-	<!-- 글 제목, 글 내용 입력 table, form, input -->
+	<!-- 게시판 이름과 글제목 -->
 	<div class="containar-board-nonmain">
+		<!-- 게시간이름, 글제목, 작성일 -->
 		<div class="center-board-nonmain" style="background-color: #ffffff; padding-top: 5px; padding-bottom: 5px; border-radius: 5px">
-		<form method="post" action="boardwriteaction.jsp">
+		<form method="post" action="boardmodifyaction.jsp">
 			<table class="write-table">
 				<thead>
 					<tr class="table-top">
 						<th colspan="2" style="border-bottom: #000000;">
 							<div style="float:left; margin-left: 0px; padding: 5px 0px;">
-								<font style="font-size: 32px"><%=boardType %> 게시판 글쓰기</font>
+								<font style="font-size: 32px">게시글 수정</font>
 							</div>
 							<div style="float: right; margin-right: 0px; padding: 5px 0px;">
-								<input type="submit" class="write-ripple-btn" value="등록">
+								<input type="submit" class="write-ripple-btn" value="수정">
+								<a class="view-button-btn" href="javascript:void(0)" onclick="javascript:history.back()">취소</a>
 								<input type="hidden" name = "mbti" value="<%=boardType %>">
+								<input type="hidden" name = "id" value="<%=request.getParameter("id") %>">
 							</div>
 						</th>
 					</tr>

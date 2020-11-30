@@ -195,14 +195,14 @@
                 <tbody>
                     <tr class="table-middle">
                         <td>2</td>
-                        <td class = "table-upper-case"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍</a></td>
+                        <td class = "table-upper-case"><a class = "board-title" href="boardview.jsp?mbti=<%=boardType%>&boardID=1">웹프그래밍</a></td>
                         <td class = "table-upper-case">웹프그래밍의 홍길동전</td>
                         <td>2020.11.14.</td>
                         <td>25</td>
                     </tr>
                     <tr class="table-middle">
                         <td>1</td>
-                        <td class = "table-upper-case"><a class = "board-title" href="boardView.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍</a></td>
+                        <td class = "table-upper-case"><a class = "board-title" href="boardview.jsp?mbti=<%=boardType%>&boardID=2">웹프그래밍</a></td>
                         <td class = "table-upper-case">웹프그래밍의 홍길동</td>
                         <td>2020.11.14.</td>
                         <td>25</td>
@@ -217,22 +217,22 @@
                 <li>
                 	<a id="right-side-bar" href="javascript:void(0)">MBTI</a>
                 	<ul class="subbar">
-                	    <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("INTJ")){%> class="active-one" <%}%> href="mbtiBoard.jsp?mbti=INTJ">INTJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("INTP")){%> class="active-one" <%}%> href="mbtiBoard.jsp?mbti=INTP">INTP</a></li>
-		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("ENTJ")){%> class="active-one" <%}%> href="mbtiBoard.jsp?mbti=ENTJ">ENTJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("ENTP")){%> class="active-one" <%}%> href="mbtiBoard.jsp?mbti=ENTP">ENTP</a></li>
-		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("INFJ")){%> class="active-two" <%}%> href="mbtiBoard.jsp?mbti=INFJ">INFJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("INFP")){%> class="active-two" <%}%> href="mbtiBoard.jsp?mbti=INFP">INFP</a></li>
-		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("ENFJ")){%> class="active-two" <%}%> href="mbtiBoard.jsp?mbti=ENFJ">ENFJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("ENFP")){%> class="active-two" <%}%> href="mbtiBoard.jsp?mbti=ENFP">ENFP</a></li>
-		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ISTJ")){%> class="active-three" <%}%> href="mbtiBoard.jsp?mbti=ISTJ">ISTJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ISFJ")){%> class="active-three" <%}%> href="mbtiBoard.jsp?mbti=ISFJ">ISFJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ESTJ")){%> class="active-three" <%}%> href="mbtiBoard.jsp?mbti=ESTJ">ESTJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ESFJ")){%> class="active-three" <%}%> href="mbtiBoard.jsp?mbti=ESFJ">ESFJ</a></li>
-		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ISTP")){%> class="active-fore" <%}%> href="mbtiBoard.jsp?mbti=ISTP">ISTP</a></li>
-		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ISFP")){%> class="active-fore" <%}%> href="mbtiBoard.jsp?mbti=ISFP">ISFP</a></li>
-		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ESTP")){%> class="active-fore" <%}%> href="mbtiBoard.jsp?mbti=ESTP">ESTP</a></li>
-		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ESFP")){%> class="active-fore" <%}%> href="mbtiBoard.jsp?mbti=ESFP">ESFP</a></li>
+                	    <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("INTJ")){%> class="active-one" <%}%> href="boardmbti.jsp?mbti=INTJ">INTJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("INTP")){%> class="active-one" <%}%> href="boardmbti.jsp?mbti=INTP">INTP</a></li>
+		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("ENTJ")){%> class="active-one" <%}%> href="boardmbti.jsp?mbti=ENTJ">ENTJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="one" <%if(boardType.equals("ENTP")){%> class="active-one" <%}%> href="boardmbti.jsp?mbti=ENTP">ENTP</a></li>
+		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("INFJ")){%> class="active-two" <%}%> href="boardmbti.jsp?mbti=INFJ">INFJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("INFP")){%> class="active-two" <%}%> href="boardmbti.jsp?mbti=INFP">INFP</a></li>
+		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("ENFJ")){%> class="active-two" <%}%> href="boardmbti.jsp?mbti=ENFJ">ENFJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="two" <%if(boardType.equals("ENFP")){%> class="active-two" <%}%> href="boardmbti.jsp?mbti=ENFP">ENFP</a></li>
+		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ISTJ")){%> class="active-three" <%}%> href="boardmbti.jsp?mbti=ISTJ">ISTJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ISFJ")){%> class="active-three" <%}%> href="boardmbti.jsp?mbti=ISFJ">ISFJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ESTJ")){%> class="active-three" <%}%> href="boardmbti.jsp?mbti=ESTJ">ESTJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="three" <%if(boardType.equals("ESFJ")){%> class="active-three" <%}%> href="boardmbti.jsp?mbti=ESFJ">ESFJ</a></li>
+		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ISTP")){%> class="active-fore" <%}%> href="boardmbti.jsp?mbti=ISTP">ISTP</a></li>
+		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ISFP")){%> class="active-fore" <%}%> href="boardmbti.jsp?mbti=ISFP">ISFP</a></li>
+		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ESTP")){%> class="active-fore" <%}%> href="boardmbti.jsp?mbti=ESTP">ESTP</a></li>
+		                <li style="background: #f1f1f1;"><a id="fore" <%if(boardType.equals("ESFP")){%> class="active-fore" <%}%> href="boardmbti.jsp?mbti=ESFP">ESFP</a></li>
                 	</ul>
                 </li>
 			</ul>
@@ -244,19 +244,19 @@
 			<%
 				if (pageNumber != 1) {
 			%>
-				<a href="mbtiBoard.jsp?mbti=<%=boardType%>&pageNumber=<%=pageNumber - 1%>"	class="board-btn">이전</a>
+				<a href="boardmbti.jsp?mbti=<%=boardType%>&pageNumber=<%=pageNumber - 1%>"	class="board-btn">이전</a>
 			<%
 				}
 				if (true)// if문 조건 달아서 현재 마지막 페이지라면 다음 버튼이 안나오게 해야함(함수 사용)
 				{
 			%>
-				<a href="mbtiBoard.jsp?mbti=<%=boardType%>&pageNumber=<%=pageNumber + 1%>"	class="board-btn">다음</a>
+				<a href="boardmbti.jsp?mbti=<%=boardType%>&pageNumber=<%=pageNumber + 1%>"	class="board-btn">다음</a>
 			<%
 				}
 			%>
 			</div>
 			<div style="float: right;">
-				<a href="boardWrite.jsp?mbti=<%= boardType%>" class="board-btn">글쓰기</a>
+				<a href="boardwrite.jsp?mbti=<%= boardType%>" class="board-btn">글쓰기</a>
 			</div>
 		</div>
 	</div>

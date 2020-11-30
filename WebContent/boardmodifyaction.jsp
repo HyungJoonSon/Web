@@ -21,12 +21,12 @@
 	if(test) {
 		PrintWriter script = response.getWriter();
 		script.print("<script>");
-		script.print("location.href = 'mbtiBoard.jsp?mbti="+ request.getParameter("mbti") +"'");
+		script.print("location.href = 'boardview.jsp?mbti="+ request.getParameter("mbti") + "&boardID=" + request.getParameter("id") +"'");
 		script.print("</script>");
 	} else {
 		PrintWriter script = response.getWriter();
 		script.print("<script type='text/javascript'>");
-		script.print("alert('글쓰기에 실패했습니다.');");
+		script.print("alert('글수정에 실패했습니다.');");
 		script.print("history.back();");
 		script.print("</script>");
 	}
