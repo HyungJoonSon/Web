@@ -167,7 +167,7 @@
 				<form id="modifyForm" method="post" action="boardmodify.jsp">
 					<input type="hidden" name = "id" value="<%=boardID %>">
 					<input type="hidden" name = "mbti" value="<%=boardType %>">
-					<a class="view-button-btn" href="javascript:void(0)" onclick="document.getElementById('modifyForm').submit()">수정</a>
+					<a class="view-button-btn" style="margin-bottom: 5px" href="javascript:void(0)" onclick="document.getElementById('modifyForm').submit()">수정</a>
 				</form>
 			</div>
 			
@@ -176,13 +176,13 @@
 				<form id="deleteForm" method="post" action="boarddeleteaction.jsp">
 					<input type="hidden" name = "id" value="<%=boardID %>">
 					<input type="hidden" name = "mbti" value="<%=boardType %>">
-					<a class="view-button-btn" href="javascript:void(0)" onclick="document.getElementById('deleteForm').submit()">삭제</a>
+					<a class="view-button-btn" style="margin-bottom: 5px" href="javascript:void(0)" onclick="document.getElementById('deleteForm').submit()">삭제</a>
 				</form>
 			</div>
 			
 			<!-- 목록 버튼 - mbti만 보내서 게시판으로 돌아감 -->
 			<div style="float:right;">
-				<a class="view-button-btn" href="boardmbti.jsp?mbti=<%=boardType%>">목록</a>
+				<a class="view-button-btn" style="margin-bottom: 5px" href="boardmbti.jsp?mbti=<%=boardType%>">목록</a>
 			</div>
 		</div>
 	</div>

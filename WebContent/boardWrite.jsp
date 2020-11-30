@@ -84,6 +84,7 @@ textarea:focus {outline:none;}
 							</div>
 							<div style="float: right; margin-right: 0px; padding: 5px 0px;">
 								<input type="submit" class="write-ripple-btn" value="등록">
+								<a class="view-button-btn" href="javascript:void(0)" onclick="javascript:history.back()">취소</a>
 								<input type="hidden" name = "mbti" value="<%=boardType %>">
 							</div>
 						</th>
