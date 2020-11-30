@@ -26,7 +26,7 @@
 	} else {
 		PrintWriter script = response.getWriter();
 		script.print("<script type='text/javascript'>");
-		script.print("alert('글삭제에 실패했습니다.');");
+		script.print("alert('좋아요에 실패했습니다.');");
 		script.print("history.back();");
 		script.print("</script>");
 	}
