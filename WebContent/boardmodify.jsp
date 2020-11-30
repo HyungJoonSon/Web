@@ -63,7 +63,7 @@ textarea:focus {outline:none;}
 					</ul>
 				</div>
 			</li>
-			<li><a href="">#Psychology</a></li>
+			<li><a href="psychology1.jsp">#Psychology</a></li>
 		</ul>
 		<ul class="navbar__user">
 			<li><i class="fas fa-user-check"></i></li>
