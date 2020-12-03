@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MBTI TOWN</title>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://kit.fontawesome.com/e387ad5e3a.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="./css/main.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MBTI TOWN</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://kit.fontawesome.com/e387ad5e3a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<nav class="navbar">
@@ -51,7 +51,15 @@
 					</ul>
 				</div>
 			</li>
-			<li><a href="psychology1.jsp">#Psychology</a></li>
+			<li>
+				<a href="psychology1.jsp">#Psychology</a>
+				<div class="sub">
+					<ul class="list">
+						<li><a href="psychology1.jsp">Job</a></li>
+						<li><a href="psychology2.jsp">Relationship</a>
+					</ul>
+				</div>
+			</li>
 		</ul>
 
 		<ul class="navbar__user">
@@ -72,11 +80,11 @@
 	</div>
 	<!-- 이미지 슬라이드 JS 코드 -->
 	<div class="section2">
-		<img src="Analysttype.png" id=mainImage alt="img">
+		<img src="http://gayounghosting.dothome.co.kr/image/AnalystImg.png" id=mainImage alt="img">
 		<script type="text/javascript">
         var myImage=document.getElementById("mainImage");
-        var imageArray=["http://gayounghosting.dothome.co.kr/image/Analysttype1.jpg","http://gayounghosting.dothome.co.kr/image/diplomattype1.jpg",
-        	"http://gayounghosting.dothome.co.kr/image/explorertype1.jpg","http://gayounghosting.dothome.co.kr/image/mangertype1.jpg"];
+        var imageArray=["http://gayounghosting.dothome.co.kr/image/AnalystImg.png","http://gayounghosting.dothome.co.kr/image/DiplomaImg.png",
+        	"http://gayounghosting.dothome.co.kr/image/ExploerImg.png","http://gayounghosting.dothome.co.kr/image/MangerImg.png"];
         var imageIndex=0;
 
         function changeImage(){
@@ -98,4 +106,6 @@
 			<p>
 		</center>
 	</div>
+	
+	
 </body>

@@ -21,6 +21,11 @@ a {
 	padding-bottom: 25px;
 }
 
+.section2 { 
+	width:100%;
+	text-align:center;
+}
+
 .navbar {
 	display: flex;
 	font-size: 28px;

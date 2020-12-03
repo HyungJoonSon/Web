@@ -62,7 +62,15 @@
 					</ul>
 				</div>
 			</li>
-			<li><a href="psychology1.jsp">#Psychology</a></li>
+			<li>
+				<a href="psychology1.jsp">#Psychology</a>
+				<div class="sub">
+					<ul class="list">
+						<li><a href="psychology1.jsp">Job</a></li>
+						<li><a href="psychology2.jsp">Relationship</a>
+					</ul>
+				</div>
+			</li>
 		</ul>
 		<ul class="navbar__user">
 			<li><i class="fas fa-user-check"></i></li>
