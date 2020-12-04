@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
  @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 * {
@@ -112,17 +112,18 @@ span {
                     <button type="button" class="togglebtn" onclick="register()">REGISTER</button>
                 </div>
                 <div class="logo">
-                MBTI_TOWN
+                <a href="main.jsp">MBTI_TOWN</a>
                 </div>
+
                 <form method="post" id="login" action="loginaction.jsp" class="input-group">
                     <input type="text" name="userID" class="input-field" maxlength="20" placeholder="User ID" required>
                     <input type="password" name="userPassword" class="input-field" maxlength="20" placeholder="Enter Password" required>
-                    <button class="submit">Login</button>
+                    <br><br><br><br><button class="submit">Login</button>
                 </form>
                 <form method="post" id="register" action="register.jsp" class="input-group">
                 	<center>
                 	<select name="mbti">
-                	<option value="">mbti¿Ø«¸¿ª º±≈√«ÿ¡÷ººø‰</option>
+                	<option value="">mbtiÏú†ÌòïÏùÑ ÏÑ†ÌÉùÌï¥Ï£ºÏÑ∏Ïöî</option>
                 	<option value="ISTJ">ISTJ</option>
                 	<option value="ISFJ">ISFJ</option>
                 	<option value="INFJ">INFJ</option>

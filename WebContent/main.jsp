@@ -64,7 +64,7 @@
 
 		<ul class="navbar__user">
 			<li><i class="fas fa-user-check"></i></li>
-			<li>~님 환영합니다</li>
+			<li><a href="login.jsp">~님 환영합니다</a></li>
 		</ul>
 	</nav>
 
