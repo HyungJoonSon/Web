@@ -96,9 +96,11 @@
 		</ul>
 	</nav>
 	
-	<!-- 게시판 이름 및 특성 -->
+	<!-- 전체 div가 들어가는 containar -->
 	<div class="container-board-main">
+	<!-- 상단에 들어가는 게시판 div -->
 		<div class="top-board-main">
+	<!-- 게시판 이름 및 특성 switch문 사용 -->
 			<font style="font-size: 100px; line-height: 100%; font-weight:bold;"><%=boardType%></font><br>
 			<%
 				if (boardType != null) {
@@ -188,9 +190,11 @@
 			%>
 		</div>
 		
-		<!-- 게시물 목록 -->
+	<!-- 중앙에 들어가는 게시판 div -->
         <div class="center-board-main">
+    <!-- 모양을 위한 table -->
             <table class="main-table">
+	<!-- 게시물 목록 상단바 -->
                 <thead>
                     <tr class="table-top">
                         <th style="width: 160px;">말머리</th>
@@ -200,6 +204,7 @@
                         <th style="width: 106px;">좋아요</th>
                     </tr>
                 </thead>
+	<!-- 게시물 목록 -->
                 <tbody>
                     <tr class="table-middle">
                         <td>2</td>
@@ -219,7 +224,7 @@
             </table>
         </div>
         
-        <!-- 오른쪽 사이드 바 -->
+	<!-- 오른쪽 사이드 바 -->
         <div class="board-main-sideBar">
             <ul id="right-sidebar">
                 <li>
@@ -246,8 +251,9 @@
 			</ul>
         </div>	
 		
-		<!-- 게시글 목록 밑  -->
+	<!-- 하단에 들어가는 게시판 div -->
 		<div class="botton-board-main">
+	<!-- 게시글 목록 밑  -->
 			<div style="float: left;">
 			<%
 				if (pageNumber != 1) {

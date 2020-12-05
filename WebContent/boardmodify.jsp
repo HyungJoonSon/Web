@@ -79,14 +79,17 @@ textarea:focus {outline:none;}
 		</ul>
 	</nav>
 	
-	<!-- 게시판 이름과 글제목 -->
+	<!-- 전체 div가 들어가는 containar -->
 	<div class="containar-board-nonmain">
-		<!-- 게시간이름, 글제목, 작성일 -->
+	<!-- 중앙에 들어가는 게시판 div -->
 		<div class="center-board-nonmain" style="background-color: #ffffff; padding-top: 5px; padding-bottom: 5px; border-radius: 5px">
+	<!-- 수정 작업을 한 후 보내기 위한 form -->
 		<form method="post" action="boardmodifyaction.jsp">
+	<!-- 모양을 위한 table -->
 			<table class="write-table">
 				<thead>
 					<tr class="table-top">
+	<!-- 게시글 수정 문구 및 수정버튼, 취소버튼 -->
 						<th colspan="2" style="border-bottom: #000000;">
 							<div style="float:left; margin-left: 0px; padding: 5px 0px;">
 								<font style="font-size: 32px">게시글 수정</font>
@@ -101,9 +104,11 @@ textarea:focus {outline:none;}
 					</tr>
 				</thead>
 				<tbody>
+	<!-- 제목이 들어가는 input이 있는 table row -->
 					<tr class="table-middle" style="border-top: #000000;">
 						<td><input type="text" class="form-write" placeholder="글 제목" name="boardTitle" maxlength="50"></td>
 					</tr>
+	<!-- 내용이 들어가는 testarea가 있는 table row -->
 					<tr class="table-middle">
 						<td><textarea class="form-write" style = "overflow: hidden; height: 300px"placeholder="글 내용" name="boardContent" maxlength="1000"></textarea></td>
 					</tr>

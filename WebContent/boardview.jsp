@@ -78,27 +78,32 @@
 		</ul>
 	</nav>
 	
-	<!-- 게시판 이름과 글쓰기 Title -->
+	<!-- 전체 div가 들어가는 containar -->
 	<div class="containar-board-nonmain">
+	<!-- 중앙에 들어가는 게시판 div -->
 		<div class="center-board-nonmain"
 			style="background-color: #ffffff; padding-top: 5px; padding-bottom: 5px; border-radius: 5px">
+	<!-- 모양을 위한 table -->
 			<table class="view-table">
 				<thead>
 					<tr class="table-top">
 						<th style="border-bottom: #000000;">
 						
-							<!-- 글 정보 중 타이틀에 관한 정보가 들어가는 공간 -->
+	<!-- 글 정보 중 게시판에 관한 정보가 들어가는 공간 -->
 							<div style="text-align: left; margin: 0px auto; width: 1040px">
 								<a class="view-title" href="boardmbti.jsp?mbti=<%=boardType%>"><font
 									style="font-size: 15px"><%=boardType%> 게시판</font></a>
 							</div>
+	<!-- 글 정보 중 글제목에 관한 정보가 들어가는 공간 -->
 							<div
 								style="margin: 5px 0px; margin-left:10px; text-align: left; width: 1040px;">
 								<font style="font-size: 30px">글 제목</font>
 							</div>
+	<!-- 글 정보 중 작성일에 관한 정보가 들어가는 공간 -->
 							<div style="float:left; margin-left:10px; margin-bottom: 9px; text-align: left; width: 300px;">
 								<font style="font-size: 13px; color: #808080">2020.11.15.08:32</font>
 							</div>
+	<!-- 좋아요 버튼이 들어가는 공간 -->
 							<div style="float:right; margin-right:10px; text-align: right; width: 300px;">
 								<a style="width: 25px; height: 25px; padding-top: 5px" onclick="return confirm('좋아요하시겠습니까?')" href="boardlikeaction.jsp?boardID=<%=boardID%>">
 									<img src = "image/baseline_thumb_up.png">
@@ -111,7 +116,7 @@
 				<tbody>
 					<tr class=table-middle style="border-top: #000000;">
 					
-						<!-- 글 정보가 들어가는 공간 -->
+	<!-- 글 정보가 들어가는 공간 -->
 						<td>
 							<div class="form-view-body">
 								여기는 글이 들어갈 공간입니다<br>
@@ -126,7 +131,7 @@
 						</td>
 					</tr>
 					
-					<!-- 댓글을 받아온 뒤 반복문 사용해서 출력해야 함 -->
+	<!-- 댓글을 받아온 뒤 반복문 사용해서 출력해야 함 -->
 					<tr class="view-bottom">
 						<td>
 							<div class="form-view-ripple">
@@ -146,7 +151,7 @@
 						</td>
 					</tr>
 					
-					<!-- 댓글 쓰는 form -->
+	<!-- 댓글 쓰는 form -->
 					<tr class="table-bottom">
 						<td>
 							<div class="input-ripple">
@@ -167,10 +172,10 @@
 			</table>
 		</div>
 		
-		<!-- 버튼 모음 -->
+	<!-- 버튼 모음 -->
 		<div class="botton-board-nonmain">
 		
-			<!-- 수정 버튼 - 정보를 넣을 때 viwe에서 받은 정보를 보낼 지, id만 보내서 다시 받을 지 정해야 함 -->
+	<!-- 수정 버튼 - 정보를 넣을 때 viwe에서 받은 정보를 보낼 지, id만 보내서 다시 받을 지 정해야 함 -->
 			<div style="float:left; padding-right: 5px">
 				<form id="modifyForm" method="post" action="boardmodify.jsp">
 					<input type="hidden" name = "id" value="<%=boardID %>">
@@ -179,7 +184,7 @@
 				</form>
 			</div>
 			
-			<!-- 삭제 버튼 - id만 보내서 통신 -->
+	<!-- 삭제 버튼 - id만 보내서 통신 -->
 			<div style="float:left;">
 				<form id="deleteForm" method="post" action="boarddeleteaction.jsp">
 					<input type="hidden" name = "id" value="<%=boardID %>">
@@ -188,7 +193,7 @@
 				</form>
 			</div>
 			
-			<!-- 목록 버튼 - mbti만 보내서 게시판으로 돌아감 -->
+	<!-- 목록 버튼 - mbti만 보내서 게시판으로 돌아감 -->
 			<div style="float:right;">
 				<a class="view-button-btn" style="margin-bottom: 5px" href="boardmbti.jsp?mbti=<%=boardType%>">목록</a>
 			</div>
